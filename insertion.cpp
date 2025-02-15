@@ -16,6 +16,7 @@ public:
 class LinkedList
 {
 public:
+// Lab 3 _ Singly Linked List(Insert at start, Insert at End)
     void insert_at_start(int val)
     {
         Node *newNode = new Node(val);
@@ -48,6 +49,7 @@ public:
             temp->next = newNode;
         }
     }
+// Lab 4 _ Singly Linked List (Insert at specific Location)
     void insert_at_pos(int pos, int d)
     {
 
@@ -84,7 +86,7 @@ public:
             }
         }
     }
-
+// Lab 6 _ Singly Linked List (Delete Nodes)
     void delete_at_start(){
         if(head != NULL){
             Node* temp = head;
@@ -93,6 +95,8 @@ public:
             temp = NULL;
         }
     }
+
+// Lab 5 _ Singly Linked List (Display Nodes)
     void display()
     {
         Node *temp = head;
